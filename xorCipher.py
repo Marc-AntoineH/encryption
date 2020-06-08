@@ -1,6 +1,6 @@
-inputString = raw_input("Enter the cipher text or plain text: ")
-key = raw_input("Enter the key for encryption or decryption: ")
-numbOfIteration = len(inputString)
+inputString = input("Enter the cipher text or plain text: ")
+key = input("Enter the key for encryption or decryption: ")
+numberOfIteration = len(inputString)
 outputString = ""
 
 
@@ -10,4 +10,4 @@ for i in range(numbOfIteration):
     outputString += chr(ord(current) ^ ord(currentKey))
 
 
-print ("Here's the output: ", outputString)
+print("Here's the output: ", outputString)
